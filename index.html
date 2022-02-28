@@ -9,23 +9,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h2>Hello world</h2>
+     
      <main>
         <div id="container" class="container">
             <div id="row" class="row">
                 <div class="col-md-6 col-lg-6">
-                    <div class="d-flex">
+                    <h5 class="text-center pt-4" >Search by Player Name</h5>
+                    <div class="d-flex p-4">
                         <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button onclick="allPlayer()" class="btn btn-outline-success" type="submit">Search</button>
                     </div> 
-                    <div id="divParent" class="container">
+                    <div id="spinner">
+                        <img class="w-50 img-spinner " src="loader_gif_1.gif" alt="">
+                    </div>
 
+                    <div id="divParent" class="container">
+                            
 
                     </div>
 
                 </div>
                 <div class="col-md-6 col-lg-6">
-                    
+                    <h5 class="text-center pt-4" > Player Details</h5>
+                    <div class="container">
+                        <img id="male" class="img-fluid w-75" src="main.jpg" alt="">
+                        <img id="female" class="img-fluid w-75"  src="woman.jpg" alt="">
+
+                    </div>
+
+                    <div id="rightDiv"  class="">
+
+                    </div>
+               
                 </div>
             </div>
 
